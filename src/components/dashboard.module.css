@@ -1,0 +1,54 @@
+.outer_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100vw;
+  /* margin-top: 20px; */
+}
+.dashContainer > div {
+  background-color: rgb(248, 184, 45);
+  color: white;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border-radius: 3rem;
+  padding: 10px;
+  margin: 15px auto;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+.dashContainer > div:hover {
+  background-color: #1e90ff;
+  color: white;
+  transition: all 0.2s linear;
+}
+.bankImg {
+  width: 400px;
+}
+
+@media screen and (min-width: 1400px) {
+  .outer_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: calc(100vh - 150px);
+    align-items: center;
+    justify-content: center;
+  }
+  .bankImg {
+    width: 500px;
+  }
+  .dashContainer {
+    width: 900px;
+  }
+  .img_container {
+    text-align: center;
+  }
+}

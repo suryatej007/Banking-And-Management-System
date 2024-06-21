@@ -1,0 +1,23 @@
+.transactions-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .transactions-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .transactions-table th, .transactions-table td {
+    border: 1px solid lightgray;
+    padding: 10px;
+  }
+  
+  .transactions-table th {
+    background-color: lightgray;
+  }
